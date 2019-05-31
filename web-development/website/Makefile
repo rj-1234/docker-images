@@ -5,7 +5,7 @@ help: ## This help.
 
 .DEFAULT_GOAL := help
 
-build-webapp: ## Build the Container
+build-webapp: ## Build the website image
 	docker build -t website:dev .
 
 run-website: ## Run the Container

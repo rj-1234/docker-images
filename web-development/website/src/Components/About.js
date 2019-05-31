@@ -1,13 +1,30 @@
 import React, {Component} from 'react'
-import logo from '../assets/images/bwprofile.jpg';
+import LeftAboutCol from './LeftABoutCol.js'
+import RightAboutCol from './RightABoutCol.js'
+
+import { Row, Col } from 'reactstrap';
 
 class About extends Component {
     
     render() {
-        const style = {backgroundColor:"#5D5D5D"}
+        const style = {flex:1, flexDirection: 'col'}
         return (
             <section id="about" style={style}>
-                <img src={logo} alt="Profile Picture" />;
+                
+                <Row>
+                    {/* Left About Column  */}
+                    <Col>
+                        Left Column
+                        <LeftAboutCol />
+                    </Col>
+                    {/* Right About column  */}
+                    <Col>
+                        Right Column
+                        <RightAboutCol />
+                    </Col>
+                </Row>
+                
+                {/* <img src={profile} aria-hidden alt="Profile Picture" />; */}
             </section>
           );
     }

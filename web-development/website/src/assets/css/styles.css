@@ -3,3 +3,23 @@
 body {
     font-family: 'Inconsolata', monospace;
 }
+
+#about {
+    background-color: darkgrey;
+    padding: 10px;
+}
+
+#experience {
+    background-color: blue;
+    padding: 10px;
+}
+
+#profilepicdiv {
+    padding: 10px 10px 10px 10px;
+}
+
+.profile-pic{
+    width: 114px;
+    height: 114px;
+    margin-left: 12px;
+}
